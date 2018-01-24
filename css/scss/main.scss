@@ -1,0 +1,48 @@
+@import "vars";
+html {
+  padding: 0;
+  margin: 0;
+  body {
+    padding: 0;
+    margin: 0;
+    background: $main;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    .main-container{
+      margin: 0;
+      padding: 0;
+      h1{
+        font-weight: 500;
+        line-height: 1.1;
+        font-family: "Furore", sans-serif;
+      }
+      .btn_big{
+        width: 250px;
+        height: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 3px double white;
+        border-radius: 15px;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: ease;
+        background: $btn_big;
+        cursor: pointer;
+
+        &:hover{
+          background: $btn_big_o;
+        }
+        //position: relative;
+        //&:after{
+        //  content: "";
+        //  position: absolute;
+        //  width: 100%;
+        //  height: 100%;
+        //}
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "vars";
+@import "fonts";
+
+.head {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../src/bg_header.png') top center;
+  background-size: cover;
+
+  .head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    .img-cont {
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      img {
+        width: 65%;
+        vertical-align: middle;
+      }
+    }
+    h1 {
+      color: white;
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0 0 10px;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    #btn1 {
+      margin: 25px 0;
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s;
+      div {
+        margin: 0;
+        position: absolute;
+        //display: inline-block;
+        transition: 0.3s;
+        bottom: calc(50% - 18px / 2);
+      }
+      i {
+        font-size: 25px;
+        top: -35px;
+        position: absolute;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      &:hover {
+        div {
+          bottom: -35px;
+        }
+        i {
+          top: calc(50% - 25px / 2);
+          opacity: 1;
+        }
+      }
+      //&:before{
+      //  content: "\e001";
+      //  font-size: 16px;
+      //}
+    }
+
+    .icon-angle-double-down {
+      position: absolute;
+      bottom: 0;
+      font-size: 39px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover{
+        transform: scale(1.4);
+      }
+    }
+  }
+}

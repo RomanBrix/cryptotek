@@ -1,0 +1,109 @@
+@import "vars";
+
+.profitable{
+  padding: 0;
+  margin: 0;
+  //height: 100vh;
+  //color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../src/bg_about.png') no-repeat fixed center;
+  background-size: cover;
+  .profitable-container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      color: $h1_about;
+    }
+    h2{
+      margin: 40px 0 10px 0;
+      font-family: "Furore", sans-serif;
+      text-align: center;
+      color: $light_blue;
+    }
+    p{
+      color: RGBA(58, 58, 58, 1.00);
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      text-align: center;
+      border: 1px solid RGBA(33, 171, 224, 1.00);
+      box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+      font-size: 17px;
+      border-spacing: 0;
+      //margin-bottom: 5px;
+      thead {
+        tr {
+          background: $light_blue;
+          color: white;
+          th {
+            padding: 20px 20px;
+            border: 1px solid RGBA(33, 171, 224, 1.00);
+
+          }
+        }
+      }
+      tbody {
+        background: white;
+        tr {
+          td:first-child {
+            color: $dark_blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              font-size: 1.6em;
+              margin-right: 15px;
+              margin-bottom: -2px;
+            }
+          }
+          td {
+            padding: 15px 20px;
+            border: 1px solid RGBA(230, 230, 230, 1.00);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    #btn8{
+
+      margin: 25px 0;
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s;
+      color: white;
+      border-color: $dark_blue;
+      div {
+        margin: 0;
+        position: absolute;
+        //display: inline-block;
+        transition: 0.3s;
+        bottom: calc(50% - 18px / 2);
+      }
+      i {
+        font-size: 25px;
+        top: -35px;
+        position: absolute;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      &:hover {
+        div {
+          bottom: -35px;
+        }
+        i {
+          color: $dark_blue;
+          top: calc(50% - 25px / 2);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

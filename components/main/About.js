@@ -3,7 +3,8 @@ import '../../css/scss/about.scss';
 import {
     about_img_1,
     about_img_2,
-    about_img_3
+    about_img_3,
+    main_link
 } from '../URL';
 export default class About extends Component {
     render() {
@@ -26,7 +27,7 @@ export default class About extends Component {
                                 рынка криптовалют.
                             </p>
                             <div className="btn_big" id="btn1" onClick={()=>{
-                                window.open('cryptoteck.org');
+                                window.open(main_link);
                             }}><div>СТАТЬ ПРЕДСТАВИТЕЛЕМ</div> <i className="icon-banknote"/></div>
                         </div>
                         <div className="right">

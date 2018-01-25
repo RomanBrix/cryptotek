@@ -1,0 +1,63 @@
+.why {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../src/bg_why.png') no-repeat fixed center;
+  background-size: cover;
+
+  .why-container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    h1 {
+      margin: 58px 0 23px 0;
+    }
+    .item{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 54px;
+      i{
+        background-image: url(../../css/src/spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+        margin: 0 auto;
+        width: 78px;
+        height: 83px;
+      }
+      p{
+        color: #b7c9d3;
+        margin: 0 0 10px;
+        text-align: center;
+      }
+      .one{
+        i{
+          background-position: -5px -79px;
+        }
+      }
+      .two{
+        i{
+          width: 86px;
+          height: 85px;
+          background-position: -93px -79px;
+        }
+      }
+      .three{
+        i{
+          width: 85px;
+          height: 83px;
+          background-position: -189px -5px;
+        }
+      }
+    }
+  }
+}

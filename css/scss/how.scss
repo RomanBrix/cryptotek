@@ -1,0 +1,126 @@
+@import "vars";
+.how{
+  padding: 0;
+  margin: 0;
+  //height: 100vh;
+  //color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../src/bg_about.png') no-repeat fixed center;
+  background-size: cover;
+  .how-container{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+      color: $h1_about;
+    }
+    p{
+      color: black;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+  .prcnt{
+    background: linear-gradient(to right, #0093cb 50%, #39b6e5 50%);
+    min-height: 415px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .prcnt-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      min-height: 415px;
+      width: 90%;
+      //background: #000;
+      .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        i{
+          background-image: url(../../css/src/spritesheet.png);
+          background-repeat: no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 64px;
+          height: 64px;
+        }
+        h2{
+          margin: 22px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-size: 18px;
+        }
+        .op{
+          font-size: 72px;
+          text-shadow: 7px 2px 10px rgba(0, 0, 0, 0.15);
+          color: white;
+        }
+      }
+      .left{
+        i{
+          background-position: -5px -5px;
+        }
+      }
+      .right{
+        i{
+          background-position: -79px -5px;
+        }
+      }
+      #btn3{
+        margin: 25px -45px 25px 0;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+        border-color: $btn_big;
+        background: white;
+        color: $h1_about;
+        font-weight: bold;
+        div {
+          margin: 0;
+          position: absolute;
+          //display: inline-block;
+          transition: 0.3s;
+          bottom: calc(50% - 18px / 2);
+          color: $h1_about;
+        }
+        i {
+          color: $h1_about;
+          font-size: 25px;
+          top: -35px;
+          position: absolute;
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover {
+          //background: $btn_big;
+          background: linear-gradient(to right, #39b6e5 50%,  #0093cb 50%);
+          border-color: white;
+          color: white;
+          div {
+            bottom: -35px;
+            color: white;
+          }
+          i {
+            top: calc(50% - 25px / 2);
+            opacity: 1;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

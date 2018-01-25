@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import  $ from 'jquery';
 import "../../css/scss/Head.scss";
-import {head_img} from "../URL";
+import {head_img, main_link} from "../URL";
 
 export default class Head extends Component {
     render() {
@@ -18,7 +18,7 @@ export default class Head extends Component {
                         Cryptotek Corp. в своей стране.
                     </p>
                     <div className="btn_big" id="btn1" onClick={()=>{
-                        window.open('cryptoteck.org');
+                        window.open(main_link);
                     }}><div>СТАТЬ ПРЕДСТАВИТЕЛЕМ</div> <i className="icon-banknote"/></div>
                     <i className="icon-angle-double-down" onClick={()=>{
                         const topPos = $("#nextStage").offset().top;
